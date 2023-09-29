@@ -2,7 +2,9 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
 import firebaseApp from "@/firebase/config";
-import { BiLoaderAlt } from "react-icons/bi";
+import Loading from "@/app/components/Loading";
+import { getUsernameFromUserId } from "@/firebase/auth";
+import { toast } from "sonner";
 
 const auth = getAuth(firebaseApp);
 
@@ -13,6 +15,7 @@ export const useAuthContext = () => useContext(AuthContext);
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [username, setUsername] = useState("");
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -27,15 +30,25 @@ export const AuthContextProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
+  useEffect(() => {
+    if (user && !user.displayName) {
+      async function loadUsername() {
+        const { username, error } = await getUsernameFromUserId(user.uid);
+        if (error) {
+          toast.error(error.message);
+        } else {
+          setUsername(username || "User");
+        }
+      }
+      loadUsername();
+    } else {
+      setUsername(user?.displayName);
+    }
+  }, [user]);
+
   return (
-    <AuthContext.Provider value={{ user }}>
-      {loading ? (
-        <div className="min-h-screen flex justify-center items-center">
-          <BiLoaderAlt size="40px" className="animate-spin text-white" />
-        </div>
-      ) : (
-        children
-      )}
+    <AuthContext.Provider value={{ user, setUser, username }}>
+      {loading ? <Loading /> : children}
     </AuthContext.Provider>
   );
 };
