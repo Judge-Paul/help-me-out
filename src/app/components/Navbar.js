@@ -8,8 +8,10 @@ import { toast } from "sonner";
 import { signOutUser } from "@/firebase/auth";
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const { user, username } = useAuthContext();
   const router = useRouter();
@@ -45,6 +47,35 @@ export default function Navbar() {
           <p className="hidden md:block text-[#120B48] font-semibold">
             Get Started
           </p>
+          <div className="md:hidden" onClick={() => setIsOpen(true)}>
+            <IoMenu size={37} className="text-[#120B48] cursor-pointer" />
+          </div>
+          {isOpen && (
+            <div className="md:hidden top-0 left-0 h-screen w-screen fixed bg-[#120B48] text-white z-[9999] flex justify-center items-center">
+              <div className="font-bold text-center">
+                {[
+                  { name: "Features", route: "#features" },
+                  { name: "How it Works", route: "#howitworks" },
+                  { name: "Get Started", route: "/" },
+                ].map((link) => (
+                  <Link
+                    key={link.route}
+                    href={link.route}
+                    className="block my-3 text-lg hover:text-gray-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="mt-5 flex mx-auto items-center justify-center w-12 h-12 rounded-full bg-white hover:bg-gray-200"
+                >
+                  <IoClose size={30} className="text-[#120B48]" />
+                </button>
+              </div>
+            </div>
+          )}
         </>
       ) : (
         // For Authenticated users

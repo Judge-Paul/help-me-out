@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </section>
         <Gap />
-        <section id="features" className="pt-40">
+        <section id="features" className="mt-32 pt-8">
           <div className="text-center">
             <h2 className="text-4xl font-semibold">Features</h2>
             <p className="mt-3 text-gray-500 font-medium">
@@ -51,7 +51,7 @@ export default function Home() {
                 <div>
                   <Image src={FeatOne} width={75} alt="Recording Icon" />
                 </div>
-                <div className="mt-3 ml-3">
+                <div className="mt-1 md:mt-3 ml-3">
                   <h4 className="text-[#1B233D] font-semibold text-xl">
                     Simple Screen Recording
                   </h4>
@@ -65,7 +65,7 @@ export default function Home() {
                 <div>
                   <Image src={FeatTwo} width={75} alt="Recording Icon" />
                 </div>
-                <div className="mt-3 ml-3">
+                <div className="mt-1 md:mt-3 ml-3">
                   <h4 className="text-[#1B233D] font-semibold text-xl">
                     Easy-to-Share URL
                   </h4>
@@ -79,7 +79,7 @@ export default function Home() {
                 <div>
                   <Image src={FeatThree} width={75} alt="Recording Icon" />
                 </div>
-                <div className="mt-3 ml-3">
+                <div className="mt-1 md:mt-3 ml-3">
                   <h4 className="text-[#1B233D] font-semibold text-xl">
                     Revisit Recordings
                   </h4>
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
         </section>
         <Gap />
-        <section id="howitworks" className="pt-40">
+        <section id="howitworks" className="mt-32 pt-8">
           <div className="text-center">
             <h2 className="text-4xl font-semibold">How it works</h2>
           </div>
