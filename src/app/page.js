@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex object-center items-center lg:w-1/2 lg:pr-20">
             <div>
               <h4 className="font-bold text-4xl lg:text-5xl xl:text-6xl">
-                Show Them Don't Just Tell
+                Show Them Don&apos;t Just Tell
               </h4>
               <p className="mt-8 mb-10 text-gray-500">
                 Help your friends and loved ones by creating and sending videos
@@ -113,9 +113,9 @@ export default function Home() {
                 Record Screen
               </h4>
               <p className="mt-5 mb-7 text-gray-500">
-                Click the "Start Recording" button in our extension. choose
-                which part of your screen to capture and who you want to send it
-                to.
+                Click the &quot;Start Recording&quot; button in our extension.
+                choose which part of your screen to capture and who you want to
+                send it to.
               </p>
               <Image
                 src={Card}

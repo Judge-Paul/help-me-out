@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { toast } from "sonner";
 import { signOutUser } from "@/firebase/auth";
 import { useAuthContext } from "@/context/AuthContext";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
