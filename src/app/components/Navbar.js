@@ -38,15 +38,18 @@ export default function Navbar() {
         <>
           <ul className="hidden md:flex font-medium">
             <li className="px-3">
-              <Link href="#features">Features</Link>
+              <Link href="/#features">Features</Link>
             </li>
             <li className="px-3">
-              <Link href="#howitworks">How it Works</Link>
+              <Link href="/#howitworks">How it Works</Link>
             </li>
           </ul>
-          <p className="hidden md:block text-[#120B48] font-semibold">
+          <Link
+            href="/login"
+            className="hidden md:block text-[#120B48] font-semibold"
+          >
             Get Started
-          </p>
+          </Link>
           <div className="md:hidden" onClick={() => setIsOpen(true)}>
             <IoMenu size={37} className="text-[#120B48] cursor-pointer" />
           </div>
