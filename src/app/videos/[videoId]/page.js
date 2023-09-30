@@ -13,7 +13,6 @@ import {
 import { BiCopy } from "react-icons/bi";
 import Link from "next/link";
 import { toast } from "sonner";
-import CustomVideoPlayer from "@/app/components/CustomVideoPlayer";
 
 export default function Page({ params }) {
   const [isOpen, setIsOpen] = useState(false);
