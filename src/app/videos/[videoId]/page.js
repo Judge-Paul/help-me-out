@@ -98,45 +98,8 @@ export default function Page({ params }) {
       </div>
       <div className="mt-10 w-full overflow-y-scroll max-h-[270px] text-justify lg:pr-24 bg-gradient-to-t from-0% to-50% from-white relative">
         <div className="relative z-[-100] p-4">
-          First step. Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and First step. Open
-          Facebook on your desktop or mobile device and locate "Marketplace" in
-          the left-hand menu or at the top of the First step. Open Facebook on
-          your desktop or mobile device and First step. Open Facebook on your
-          desktop or mobile device and locate "Marketplace" in the left-hand
-          menu or at the top of the First step. Open Facebook on your desktop or
-          mobile device and First step. Open Facebook on your desktop or mobile
-          device and locate "Marketplace" in the left-hand menu or at the top of
-          the First step. Open Facebook on your desktop or mobile device and
-          First step. Open Facebook on your desktop or mobile device and locate
-          "Marketplace" in the left-hand menu or at the top of the First step.
-          Open Facebook on your desktop or mobile device and "Marketplace" in
-          the left-hand menu or at the top of the First step. Open Facebook on
-          your desktop or mobile device and "Marketplace" in the left-hand menu
-          or at the top of the First step. Open Facebook on your desktop or
-          mobile device and "Marketplace" in the left-hand menu or at the top of
-          the First step. Open Facebook on your desktop or mobile device and
+          Hello this is the video description as of right now this is empty but
+          it will be populated soon.
         </div>
       </div>
       <div className="mt-10">
