@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpMeOut</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+
+  <body>
+    <div class="popup-container">
+      <div class="popup-header">
+        <img src="./images/logo.png" alt="" class="popup-logo" />
+
+        <div class="popup-header-actions">
+          <img
+            src="./images/setting-2.png"
+            alt=""
+            class="popup-settings-icon"
+          />
+          <img
+            src="./images/close-circle.png"
+            alt=""
+            class="popup-close-icon"
+          />
+        </div>
+      </div>
+
+      <p class="popup-description">
+        This extension helps you record and share help videos with ease.
+      </p>
+
+      <div class="popup-body-actions">
+        <div class="popup-body-action">
+          <img
+            src="./images/monitor.png"
+            alt=""
+            class="popup-body-action-icon"
+          />
+          <p class="popup-body-action-text">Full screen</p>
+        </div>
+
+        <div class="popup-body-action">
+          <img src="./images/copy.png" alt="" class="popup-body-action-icon" />
+          <p class="popup-body-action-text">Current Tab</p>
+        </div>
+      </div>
+
+      <div class="popup-section">
+        <div class="popup-section-content">
+          <img
+            src="./images/video-camera.png"
+            alt=""
+            class="popup-section-icon"
+          />
+          <p class="popup-section-text">Camera</p>
+        </div>
+
+        <label class="popup-toggle">
+          <input type="checkbox" class="popup-toggle-input" />
+          <span class="popup-toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="popup-section">
+        <div class="popup-section-content">
+          <img
+            src="./images/microphone.png"
+            alt=""
+            class="popup-section-icon"
+          />
+          <p class="popup-section-text">Audio</p>
+        </div>
+
+        <label class="popup-toggle">
+          <input type="checkbox" class="popup-toggle-input" />
+          <span class="popup-toggle-slider"></span>
+        </label>
+      </div>
+
+      <button id="record" class="popup-button">Start Recording</button>
+    </div>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
