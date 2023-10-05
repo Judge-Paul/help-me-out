@@ -26,7 +26,7 @@ export default function Home() {
                 on how to get things done on a website.
               </p>
               <Link
-                href="https://drive.google.com/drive/folders/1Av1U4uYfgys_Do2EbtCnf9EjT5NXz686?usp=drive_link"
+                href="https://drive.google.com/folderview?id=1h1Jq7NKEGD1z9fdrybtyg53zwp7kVxR-"
                 className="block text-center lg:w-max bg-[#120B48] text-white py-3 px-10 rounded-md"
               >
                 Install HelpMeOut {"->"}{" "}
